@@ -1,0 +1,26 @@
+{
+  "name": "api-lottery",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/LaLunaInSky/lottery-api-challenge#readme",
+  "bugs": {
+    "url": "https://github.com/LaLunaInSky/lottery-api-challenge/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaLunaInSky/lottery-api-challenge.git"
+  },
+  "license": "MIT",
+  "author": "LaLunaInSky",
+  "type": "module",
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "graphql": "^16.12.0",
+    "graphql-http": "^1.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3"
+  }
+}
