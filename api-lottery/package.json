@@ -14,13 +14,17 @@
   "author": "LaLunaInSky",
   "type": "module",
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
     "@types/express": "^5.0.6",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.45.1",
     "express": "^5.2.1",
     "graphql": "^16.12.0",
     "graphql-http": "^1.22.4"
   },
   "devDependencies": {
-    "@types/node": "^25.0.3"
+    "@types/node": "^25.0.3",
+    "drizzle-kit": "^0.31.8"
   }
 }

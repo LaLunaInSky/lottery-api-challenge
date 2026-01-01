@@ -3,8 +3,9 @@ import path from "path";
 import express from "express";
 import { fileURLToPath } from "url";
 import { createHandler } from "graphql-http/lib/use/express";
-import rootValue from "../graphql/rootValue/rootValue.js";
-import schema from "../graphql/schema/schema.js";
+import rootValue from "./graphql/rootValue/rootValue.js";
+import schema from "./graphql/schema/schema.js";
+import Test from "./functions/test.js";
 
 const __filename = fileURLToPath(
     import.meta.url
@@ -35,12 +36,14 @@ app.get(
 app.all(
     "/graphql",
     cors({
-        origin: "*"
+        origin: "https://lalunainsky.com/"
     }),
     createHandler({
         schema,
         rootValue,
     }),
 );
+
+await Test();
 
 export default app;
