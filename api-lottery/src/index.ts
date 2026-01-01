@@ -35,9 +35,7 @@ app.get(
 
 app.all(
     "/graphql",
-    cors({
-        origin: "https://lalunainsky.com/"
-    }),
+    cors(),
     createHandler({
         schema,
         rootValue,
