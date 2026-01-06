@@ -25,7 +25,7 @@ app.get(
         res.sendFile(
             path.join(
                 __dirname,
-                "..",
+                ".",
                 "templates",
                 "home_page.html"
             )
